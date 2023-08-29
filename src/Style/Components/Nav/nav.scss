@@ -1,0 +1,90 @@
+@use "../../Utils/variables";
+@use "../../Utils/mixins";
+
+.invisible {
+    width: 0;
+    height: 0;
+    
+
+    & .onglet {
+        opacity: 0;
+        position: absolute;
+
+    }
+}
+.visible {
+    width: auto;
+    height: 15rem;
+    transition: 2.6s;
+
+   
+
+    & .onglet {
+        background-color: variables.$color1;
+        color: white;
+        font-size: 1.2rem;
+        height: 3rem;
+        position: relative;
+        opacity: 1;
+        transition: opacity 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @for $i from 1 to 6 {
+            &--#{$i} {
+                transition-delay: 400ms*$i;
+            }
+        }
+
+        &:hover {
+            background-color: white;
+            color: variables.$color1;
+        }
+    }
+}
+
+
+.burger {
+
+width: 100px;
+height: 25px;
+margin: auto;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+position: relative;
+padding: 5px;
+
+
+
+
+& .top {
+   @include mixins.Burger;
+   top: 5px;
+
+   
+}
+
+& .topOpenned {
+    transform: rotate(-45deg);
+    top: 50%;
+   }
+
+& .middle {
+    @include mixins.Burger;
+    top: 15px;
+}
+
+& .middleOpenned {
+    transform: translateX(-1000px);
+}
+& .bottom {
+    @include mixins.Burger;
+    top: 25px;
+}
+& .bottomOpenned {
+    transform: rotate(45deg);
+    top: 50%;
+   }
+}

@@ -1,0 +1,1 @@
+export const Sticky = (state) => state.Sticky.sticky

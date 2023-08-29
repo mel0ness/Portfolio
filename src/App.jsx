@@ -4,12 +4,17 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import ReactHelmet from './Components/Helmet';
+import { Provider } from "react-redux";
+import store from './Features/store';
+import { PersistGate } from "redux-persist/integration/react";
+import { persistStore } from "redux-persist";
 
 
 function App() {
-
+  let persistore = persistStore(store);
   return (
-
+    <Provider store={store}>
+    <PersistGate persistor={persistore}>
     <Router>
       <ReactHelmet />
 <Header />
@@ -17,7 +22,7 @@ function App() {
 <Route exact path='/' element={<Home />} />
       </Routes>
       <Footer />
-    </Router>
+    </Router></PersistGate></Provider>
   )
 }
 
