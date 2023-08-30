@@ -3,7 +3,7 @@
     {
         "id": 1,
         "nom": "JS Portfolio",
-        "photo": "../../src/assets/P6.jpg",
+        "photo": "../../public/assets/P6.jpg",
         "adresse": "https://mel0ness.github.io/Project-6/FrontEnd/index.html",
         "GithubCode": "https://github.com/mel0ness/Project-6",
         "description" : "Création d'une page dynamique avec du JS. Pour une vue d'ensemble du projet, le lancement d'un serveur local est nécessaire. [Projet OpenClassRooms]",
@@ -19,7 +19,7 @@
     {
         "id": 2,
         "nom": "Application REACT de location d'immobilier",
-        "photo": "../../src/assets/P8.jpg",
+        "photo": "../../public/assets/P8.jpg",
         "adresse": "https://mel0ness.github.io/Projetc-8/",
         "GithubCode": "https://github.com/mel0ness/Projetc-8",
         "description" : "Création d'une application REACT ayant pour but de lister des logements à louer pour les visiteurs du site. Importance de l'utilisation des composants REACT au maximum [Projet OpenClassRooms]",
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "nom": "Gestion du SEO et optimisation",
-        "photo": "../../src/assets/P9.jpg",
+        "photo": "../../public/assets/P9.jpg",
         "adresse": "https://mel0ness.github.io/Project-9/",
         "GithubCode": "https://github.com/mel0ness/Project-9",
         "description" : "Modification du code d'un site en vue d'y apporter une meilleure organisation. Augmanter l'accéssibilité du site ainsi que son optimisation. (Utilisation des meta datas pour les réseaux sociaux, optimisation des images et des données chargées...) [Projet OpenClassRooms]",
@@ -49,7 +49,7 @@
     {
         "id": 4,
         "nom": "Application REACT avec REDUX",
-        "photo": "../../src/assets/P11.jpg",
+        "photo": "../../public/assets/P11.jpg",
         "adresse": "https://mel0ness.github.io/Project-11-deploy/",
         "GithubCode": "https://github.com/mel0ness/Project-11",
         "description" : "Implémentation d'une connexion utilisateur avec REACT/REDUX et les envoies API nécessaires. Création de compte possible et Affichage des informations de chaque utilisateur ainsi que de ses comptes [Projet OpenClassRooms]",
@@ -64,7 +64,7 @@
     {
         "id": 5,
         "nom": "LHotel",
-        "photo": "../../src/assets/LHotel.jpg",
+        "photo": "../../public/assets/LHotel.jpg",
         "adresse": "https://www.lhotel-thouars.fr/",
         "GithubCode": "https://github.com/mel0ness/Lhotel-React",
         "description" : "Création d'un site pour un Hôtel dans les Deux-Sèvres permettant une courte présentation mais aussi les réservations par formulaire. Ancienne Version encore en ligne, mais une version améliorée et REACT du site arrive et est déjà développée sur mon github. [Projet Personnel]",
