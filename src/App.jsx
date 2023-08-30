@@ -3,6 +3,7 @@ import "./Style/Utils/global.scss"
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
+import Projets from './Pages/Projets';
 import ReactHelmet from './Components/Helmet';
 import { Provider } from "react-redux";
 import store from './Features/store';
@@ -20,6 +21,7 @@ function App() {
 <Header />
       <Routes>
 <Route exact path='/' element={<Home />} />
+<Route path='/projets' element={<Projets />} />
       </Routes>
       <Footer />
     </Router></PersistGate></Provider>

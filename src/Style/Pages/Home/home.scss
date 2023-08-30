@@ -7,22 +7,9 @@
     
 }
 
-.decal {
-    margin-top: 183px;
-}
 
-h1, h2 {
-    font-weight: 400;
-    font-style: italic;
-}
 
-.separator {
-    width: 30%;
-    height: 1px;
-    background-color: variables.$color1;
-    margin: auto;
-    margin-bottom: 20px;
-}
+
 
 .presentation {
     max-width: 80%;
@@ -30,6 +17,12 @@ h1, h2 {
     margin: auto;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.lienHome {
+    text-decoration: none;
+    font-weight: 600;
+    color: variables.$color1;
 }
 
 

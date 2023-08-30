@@ -1,0 +1,36 @@
+@use "../../Utils/variables";
+
+.imagePres {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.projetGlobal {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    border: solid 2px variables.$color1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 2px 2px variables.$color1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.TitlePres {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.discoverProject {
+    font-style: italic;
+    text-decoration: underline;
+    color: variables.$color1;
+}

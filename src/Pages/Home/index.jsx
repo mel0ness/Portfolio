@@ -3,9 +3,16 @@ import "../../Style/Pages/Home/home.scss"
 import Photo from "../../assets/Moi.jpg"
 import { useSelector } from "react-redux";
 import { Sticky } from "../../Features/selector";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
+
+    const ScrollTop = () => {
+
+        
+        window.scroll(0, 0)
+    }
 
     const isSticky = useSelector(Sticky)
 
@@ -24,6 +31,9 @@ const Home = () => {
             <div className="separator"></div>
 <div className="presentation">Mon objectif premier est de découvrir encore plus et d&apos;apprendre en intégrant une équipe de cet univers. Mais les projets solo ne m&apos;effraient pas. Si vous voulez en apprendre plus sur mon parcours, n&apos;hésitez pas à consulter la rubrique &quot;Mon histoire&quot;.</div>
 
+<div className="separator"></div>
+<div className="presentation">N&apos;hésitez pas à consulter <Link onClick={() => ScrollTop()} className="lienHome" to="/projets">mes projets</Link> réalisés!</div>
+
         </div> : <div className="home">
             <HelmetProvider>
                 <title>Portfolio de Bastien BARYLA</title>
@@ -37,6 +47,9 @@ const Home = () => {
             <div className="separator"></div>
 <div className="presentation">Mon objectif premier est de découvrir encore plus et d&apos;apprendre en intégrant une équipe de cet univers. Mais les projets solo ne m&apos;effraient pas. Si vous voulez en apprendre plus sur mon parcours, n&apos;hésitez pas à consulter la rubrique &quot;Mon histoire&quot;.</div>
 
+<div className="separator"></div>
+<div className="presentation">N&apos;hésitez pas à consulter <Link onClick={() => ScrollTop()} className="lienHome" to="/projets">mes projets</Link> réalisés!</div>
+ 
         </div> }
         
         </div>

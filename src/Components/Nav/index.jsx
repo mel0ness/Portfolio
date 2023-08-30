@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../Style/Components/Nav/nav.scss"
 
 const Nav = () => {
@@ -12,14 +13,14 @@ const Nav = () => {
         <span className="bottom"></span></div>  }
          
   {BurgerOpenned? <nav className="visible">
-        <div className="onglet onglet--1">Home</div>
-        <div className="onglet onglet--2">Projets</div>
+        <Link onClick={() => openBurger(false)} to="/" className="onglet onglet--1">Home</Link>
+        <Link onClick={() => openBurger(false)} to="/projets" className="onglet onglet--2">Projets</Link>
         <div className="onglet onglet--3">Compétences</div>
         <div className="onglet onglet--4">Mon histoire</div>
         <div className="onglet onglet--5">Contact</div>
     </nav> : <nav className="invisible">
-    <div className="onglet onglet--1">Home</div>
-        <div className="onglet onglet--2">Projets</div>
+    <Link to="/" className="onglet onglet--1">Home</Link>
+        <Link to="/projets" className="onglet onglet--2">Projets</Link>
         <div className="onglet onglet--3">Compétences</div>
         <div className="onglet onglet--4">Mon histoire</div>
         <div className="onglet onglet--5">Contact</div>

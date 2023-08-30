@@ -1,0 +1,19 @@
+@use "../../Utils/variables";
+@use "../../Utils/keyframes";
+
+.StarsComp {
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    animation: Stars 0.5s both;
+
+    @for $i from 1 to 8 {
+        &#{$i} {
+            animation-delay: 0.5s * $i;
+        }
+    }
+}

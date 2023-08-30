@@ -2,6 +2,7 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit"
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import StickyReducer from "./StickyReducer"
+import modaleIDReducer from "./modaleIDReducer"
 
 
 
@@ -9,13 +10,15 @@ import StickyReducer from "./StickyReducer"
 const persistConfig = {
     timeout: 1000,
     key: 'root',
-    storage
+    storage,
+    blacklist: ["modaleID"]
   }
 
 
 
   const reducers = combineReducers({
-    Sticky: StickyReducer
+    Sticky: StickyReducer,
+    modaleID: modaleIDReducer
   })
  
 
