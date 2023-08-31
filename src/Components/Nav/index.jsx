@@ -22,14 +22,14 @@ const Nav = () => {
   {BurgerOpenned? <nav className="visible">
         <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
         <Link onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
-        <div onClick={() => ClickNav()} className="onglet onglet--3">Compétences</div>
-        <div onClick={() => ClickNav()} className="onglet onglet--4">Mon histoire</div>
+        <Link onClick={() => ClickNav()} to="/competences" className="onglet onglet--3">Compétences</Link>
+        <Link onClick={() => ClickNav()} to="/histoire" className="onglet onglet--4">Mon histoire</Link>
         <div onClick={() => ClickNav()} className="onglet onglet--5">Contact</div>
     </nav> : <nav className="invisible">
     <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
         <Link  onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
-        <div onClick={() => ClickNav()} className="onglet onglet--3">Compétences</div>
-        <div onClick={() => ClickNav()} className="onglet onglet--4">Mon histoire</div>
+        <Link onClick={() => ClickNav()} to="/competences" className="onglet onglet--3">Compétences</Link>
+        <Link onClick={() => ClickNav()} to="/histoire" className="onglet onglet--4">Mon histoire</Link>
         <div onClick={() => ClickNav()} className="onglet onglet--5">Contact</div>
     </nav> }</div>
     )

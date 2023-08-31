@@ -17,3 +17,24 @@ width: 20px;
 height: 20px;
     }
 }
+
+@keyframes Evolution {
+    from {
+width: 0;
+    }
+    to {
+width: var(--max-width);
+    }
+}
+
+@keyframes Pourcent {
+ 1%{
+    opacity: 0
+ }
+ 99%{
+    opacity: 0
+ }
+ 100% {
+    opacity: 1
+ }
+}

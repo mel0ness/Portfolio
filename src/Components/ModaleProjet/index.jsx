@@ -34,7 +34,7 @@ let FilteredDatas = "";
 <div className="Name">{FilteredDatas[0].nom}</div>
 <div className="Photo"><img src={FilteredDatas[0].photo} alt={FilteredDatas[0].nom} /></div>
 <div className="flexyDescr">
-<div className="flexy"><h4>Déscription du projet : </h4>{FilteredDatas[0].description}</div>
+<div className="flexy descr"><h4>Déscription du projet : </h4>{FilteredDatas[0].description}</div>
     <div className="flexy"><h4>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
     <div className="flexy"><h4>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div>
 </div>

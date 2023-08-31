@@ -71,9 +71,9 @@
         "Compétences": {
             "HTML" : 3,
             "CSS": 4,
-            "JS": 3,
+            "JS": 2,
             "REACT": 4,
-            "REDUX": 3
+            "REDUX": 0
         }
     }
 ]

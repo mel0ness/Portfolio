@@ -49,15 +49,16 @@ left: 50%;
     border: 1px solid variables.$color1;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 16px;
     width: 35px;
     height:35px;
 }
 
 .Name {
     position: relative;
-    top: 11px;
+    top: 10px;
     left: 20px;
+    height: 48px;
     font-style: italic;
     width: 70%;
     display: flex;
@@ -67,8 +68,10 @@ left: 50%;
 
 .Photo {
     position: relative;
-    top: 11px;
+    top: 10px;
     left: 50%;
+    margin-top: 5px;
+    border: solid 1px variables.$color1;
     transform: translateX(-50%);
     width: 100px;
     height: 100px;
@@ -88,6 +91,8 @@ left: 50%;
     top: 15px;
     font-size: 14px;
     gap: 5px;
+    margin: 5px;
+   
 
     & .flexy {
         display: flex;
@@ -98,6 +103,14 @@ left: 50%;
         text-decoration: none;
         color: variables.$color1;
         font-weight: 600;
+    }
+
+    & .descr {
+        text-align: justify;
+
+        & h4 {
+            text-align: center;
+        }
     }
 
 }

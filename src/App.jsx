@@ -4,6 +4,8 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Projets from './Pages/Projets';
+import Competences from './Pages/Competences';
+import Histoire from './Pages/Histoire';
 import ReactHelmet from './Components/Helmet';
 import { Provider } from "react-redux";
 import store from './Features/store';
@@ -22,6 +24,8 @@ function App() {
       <Routes>
 <Route exact path='/' element={<Home />} />
 <Route path='/projets' element={<Projets />} />
+<Route path='/histoire' element={<Histoire />} />
+<Route path='/competences' element={<Competences />} />
       </Routes>
       <Footer />
     </Router></PersistGate></Provider>

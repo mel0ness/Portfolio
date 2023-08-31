@@ -1,0 +1,13 @@
+@use "../../Utils/variables";
+
+.competencesDescr {
+    width: 80%;
+    text-indent: 50px;
+    text-align: justify;
+    margin: auto;
+}
+
+.quote {
+    font-style: italic;
+    color: variables.$color1;
+}

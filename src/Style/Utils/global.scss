@@ -15,6 +15,9 @@ html {
   body, #root {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   h1, h2 {
@@ -42,6 +45,23 @@ h5 {
     margin-bottom: 20px;
 }
 
+.separatorBIG {
+  width: 30%;
+  height: 1px;
+  background-color: variables.$color1;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .decal {
-  margin-top: 183px;
+  margin-top: 200px;
+}
+
+.ArrowUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
 }

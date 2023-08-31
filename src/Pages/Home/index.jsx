@@ -26,10 +26,10 @@ const Home = () => {
 <img src={Photo} alt="Photo de Bastien BARYLA" className="mainPhoto"/>
 <h2>Ambitions</h2>
             <div className="separator"></div>
-<div className="presentation">Mon objectif premier est de découvrir encore plus et d&apos;apprendre en intégrant une équipe de cet univers. Mais les projets solo ne m&apos;effraient pas. Si vous voulez en apprendre plus sur mon parcours, n&apos;hésitez pas à consulter la rubrique &quot;Mon histoire&quot;.</div>
+<div className="presentation">Mon objectif premier est de découvrir encore plus et d&apos;apprendre en intégrant une équipe de cet univers. Mais les projets solo ne m&apos;effraient pas. Si vous voulez en apprendre plus sur mon parcours, n&apos;hésitez pas à consulter la rubrique <Link onClick={() => ScrollTop()} className="lienHome" to="/histoire">&quot;Mon histoire&quot;</Link>.</div>
 
 <div className="separator"></div>
-<div className="presentation">N&apos;hésitez pas à consulter <Link onClick={() => ScrollTop()} className="lienHome" to="/projets">mes projets</Link> réalisés!</div>
+<div className="presentation">Vous pouvez également consulter <Link onClick={() => ScrollTop()} className="lienHome" to="/projets">mes projets</Link> réalisés!</div>
 
         </div> : <div className="home">
             <HelmetProvider>
