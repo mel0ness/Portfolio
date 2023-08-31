@@ -1,8 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../Style/Components/Nav/nav.scss"
+import ScrollTop from "../../Features/scrollTop";
 
 const Nav = () => {
+
+    const ClickNav = () => {
+       
+        ScrollTop();
+        openBurger(false);
+    }
 
     const [BurgerOpenned, openBurger] = useState(false);
     return (<div>
@@ -13,17 +20,17 @@ const Nav = () => {
         <span className="bottom"></span></div>  }
          
   {BurgerOpenned? <nav className="visible">
-        <Link onClick={() => openBurger(false)} to="/" className="onglet onglet--1">Home</Link>
-        <Link onClick={() => openBurger(false)} to="/projets" className="onglet onglet--2">Projets</Link>
-        <div className="onglet onglet--3">Compétences</div>
-        <div className="onglet onglet--4">Mon histoire</div>
-        <div className="onglet onglet--5">Contact</div>
+        <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
+        <Link onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
+        <div onClick={() => ClickNav()} className="onglet onglet--3">Compétences</div>
+        <div onClick={() => ClickNav()} className="onglet onglet--4">Mon histoire</div>
+        <div onClick={() => ClickNav()} className="onglet onglet--5">Contact</div>
     </nav> : <nav className="invisible">
-    <Link to="/" className="onglet onglet--1">Home</Link>
-        <Link to="/projets" className="onglet onglet--2">Projets</Link>
-        <div className="onglet onglet--3">Compétences</div>
-        <div className="onglet onglet--4">Mon histoire</div>
-        <div className="onglet onglet--5">Contact</div>
+    <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
+        <Link  onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
+        <div onClick={() => ClickNav()} className="onglet onglet--3">Compétences</div>
+        <div onClick={() => ClickNav()} className="onglet onglet--4">Mon histoire</div>
+        <div onClick={() => ClickNav()} className="onglet onglet--5">Contact</div>
     </nav> }</div>
     )
 }

@@ -15,7 +15,7 @@
 .visible {
     width: auto;
     height: 15rem;
-    transition: 2.6s;
+    transition: 1.3s;
 
    
 
@@ -34,7 +34,7 @@
 
         @for $i from 1 to 6 {
             &--#{$i} {
-                transition-delay: 400ms*$i;
+                transition-delay: 200ms*$i;
             }
         }
 

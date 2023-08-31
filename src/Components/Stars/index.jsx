@@ -15,7 +15,7 @@ const Stars = [One, Two, Three, Four, Five];
 return (
     <div className="StarsComp">
         { Stars.map(({d}, index) => 
-        <Star state={Stars[index]} key={`${d}--${index}`} class={index + 3}/>)
+        <Star state={Stars[index]} key={`${d}--${index}`} class={index + 2}/>)
         }
     </div>
 )

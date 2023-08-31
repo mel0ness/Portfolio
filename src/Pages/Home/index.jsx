@@ -4,15 +4,12 @@ import Photo from "../../assets/Moi.jpg"
 import { useSelector } from "react-redux";
 import { Sticky } from "../../Features/selector";
 import { Link } from "react-router-dom";
+import ScrollTop from "../../Features/scrollTop";
 
 
 const Home = () => {
 
-    const ScrollTop = () => {
-
-        
-        window.scroll(0, 0)
-    }
+   
 
     const isSticky = useSelector(Sticky)
 

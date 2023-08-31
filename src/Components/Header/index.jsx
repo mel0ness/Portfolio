@@ -9,6 +9,7 @@ import {Sticky } from "../../Features/selector"
 import { Active, Disactive } from "../../Features/StickyReducer"
 
 
+
 const Header = () => {
     const [scroll, updateScroll] = useState(false)
 

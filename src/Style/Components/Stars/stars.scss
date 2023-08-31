@@ -11,9 +11,9 @@
     height: 20px;
     animation: Stars 0.5s both;
 
-    @for $i from 1 to 8 {
+    @for $i from 1 to 7 {
         &#{$i} {
-            animation-delay: 0.5s * $i;
+            animation-delay: 0.3s * $i;
         }
     }
 }
