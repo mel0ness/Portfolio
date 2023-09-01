@@ -11,7 +11,9 @@ const Projets = () => {
 
     const isSticky = useSelector(Sticky)
     
-    return (<motion.div variants={routeVariants} initial="initial" animate="final" exit="exit">
+    return (<motion.div layout transition={{
+        layout: { duration: 0 }
+      }}  variants={routeVariants} initial="initial" animate="final" exit="exit">
         <HelmetProvider>
                 <title>Mes projets</title>
             </HelmetProvider>
