@@ -12,7 +12,9 @@ const Competences = () => {
     
     return(
 
-        <motion.div variants={routeVariants} initial="initial" animate="final" exit="exit">
+        <motion.div variants={routeVariants} layout transition={{
+            layout: { duration: 0 }
+          }} initial="initial" animate="final">
             <HelmetProvider>
                 <title>Mes compétences</title>
             </HelmetProvider>
