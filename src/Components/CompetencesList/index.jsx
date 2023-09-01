@@ -4,7 +4,7 @@ import "../../Style/Components/CompetencesList/competenceslist.scss"
 
 const CompetencesList = () => {
     return (<div>
-        <h2>Compétences</h2>
+        <h1>Compétences</h1>
     <div className="separator"></div>
 <CompetencesBarre name="HTML" pourcent="80" color="DC4A25" duration={1} delay={0} />
 <CompetencesBarre name="CSS" pourcent="70" color="244BDD" duration={2} delay={1}/>

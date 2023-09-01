@@ -3,7 +3,7 @@ import "../../Style/Components/HistoireDatas/histoiredatas.scss"
 const HistoireDatas = () => {
     return (
         <div>
-        <h2>Etudes</h2>
+        <h1>Etudes</h1>
     <div className="ParagHistoire">J&apos;ai commencé mon parcours étudiant dans une école de la faculté catholique de Lille. Et j&apos;y ai validé une licence en gestion des entreprises. Ces études ne m&apos;ont pas à proprement parlé apporté mon premier emploi mais elle m&apos;ont permises de me développer personellement et de découvrir des bases assez générale dans suffisament de domaines qui allaient m&apos;être utiles plus tard.</div>
     <div className="separator"></div>
     <h2>Parcours Pro</h2>
