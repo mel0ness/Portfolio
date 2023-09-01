@@ -3,7 +3,6 @@
 
 .header {
     background-color: white;
-    transition: transform 1s;
     position: relative;
 }
 .logo {
@@ -18,4 +17,5 @@
     background-color: transparent;
     width: 160px;
     z-index: 12;
+    transition: transform 1s;
 }
