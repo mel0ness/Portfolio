@@ -1,0 +1,19 @@
+.header {
+  background-color: white;
+  position: relative;
+}
+
+.logo {
+  width: 160px;
+}
+
+.sticky {
+  position: fixed;
+  transform: translateX(-40%);
+  top: 0;
+  left: 60px;
+  background-color: transparent;
+  width: 160px;
+  z-index: 12;
+  transition: transform 1s;
+}/*# sourceMappingURL=header.css.map */

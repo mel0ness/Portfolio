@@ -11,12 +11,12 @@ const Projets = () => {
 
     const isSticky = useSelector(Sticky)
     
-    return (<motion.div variants={routeVariants} initial="initial" animate="final" exit="exit" key="Projets">
+    return (<motion.div variants={routeVariants} initial="initial" animate="final" exit="exit">
         <HelmetProvider>
                 <title>Mes projets</title>
             </HelmetProvider>
 
-{isSticky?  <div className="decal"> <h1>Mes projets</h1>
+{isSticky?  <div className="decal2"> <h1>Mes projets</h1>
             <div className="separator"></div>
             {Datas.map(({id, nom, photo, adresse, GithubCode, description, compétences}) => 
             <CardProjet id={id} nom={nom} photo={photo} adresse={adresse} git={GithubCode} descr={description} compt={compétences} key={id} />)}<ModaleProjet /></div> :  <div> <h1>Mes projets</h1>

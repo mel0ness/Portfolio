@@ -12,11 +12,11 @@ const Competences = () => {
     
     return(
 
-        <motion.div layout variants={routeVariants} initial="initial" animate="final" exit="exit">
+        <motion.div variants={routeVariants} initial="initial" animate="final" exit="exit">
             <HelmetProvider>
                 <title>Mes compétences</title>
             </HelmetProvider>
-            {isSticky? <div className="decal" id="up"><CompetencesList /><Link smooth to="/competences#up"><img src={Arrow} alt="retour en haut" className="ArrowUp" /></Link></div> : <div><CompetencesList /></div>}
+            {isSticky? <div className="decal2" id="up"><CompetencesList /><Link smooth to="/competences#up"><img src={Arrow} alt="retour en haut" className="ArrowUp" /></Link></div> : <div><CompetencesList /></div>}
           
         </motion.div>
 

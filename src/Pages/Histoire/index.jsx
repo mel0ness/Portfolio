@@ -16,7 +16,7 @@ const Histoire = () => {
                 <title>Mon histoire</title>
             </HelmetProvider>
  {isSticky? 
- <div className="decal"><HistoireDatas /></div>
+ <div className="decal2"><HistoireDatas /></div>
  : <div><HistoireDatas /></div>
 }           
 

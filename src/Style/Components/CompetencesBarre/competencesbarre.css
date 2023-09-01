@@ -1,0 +1,217 @@
+@keyframes Stars {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 1;
+    width: 22px;
+    height: 22px;
+  }
+  100% {
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+  }
+}
+@keyframes Evolution {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--max-width);
+  }
+}
+@keyframes Pourcent {
+  1% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Bar {
+  width: 80%;
+  height: 20px;
+  border: solid 2px #01476B;
+  margin: auto;
+  position: relative;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+}
+.Bar:hover {
+  cursor: pointer;
+}
+.Bar:hover .progressBar {
+  opacity: 0.4;
+}
+
+.nameBar {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-weight: 700;
+}
+
+.pourcentBar {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  font-size: 1.2rem;
+  animation: Pourcent both;
+}
+.pourcentBar--1 {
+  animation-duration: 0.25s;
+}
+.pourcentBar--2 {
+  animation-duration: 0.5s;
+}
+.pourcentBar--3 {
+  animation-duration: 0.75s;
+}
+.pourcentBar--4 {
+  animation-duration: 1s;
+}
+.pourcentBar--5 {
+  animation-duration: 1.25s;
+}
+.pourcentBar--6 {
+  animation-duration: 1.5s;
+}
+.pourcentBar--7 {
+  animation-duration: 1.75s;
+}
+.pourcentBar--8 {
+  animation-duration: 2s;
+}
+.pourcentBar--9 {
+  animation-duration: 2.25s;
+}
+
+.pourcentBarNonAni {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  font-size: 1.2rem;
+}
+
+.progressBar {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 0;
+  animation: Evolution 0.8s both;
+  opacity: 0.7;
+}
+.progressBar--0 {
+  animation-delay: 0s;
+}
+.progressBar--1 {
+  animation-delay: 0.2s;
+}
+.progressBar--2 {
+  animation-delay: 0.4s;
+}
+.progressBar--3 {
+  animation-delay: 0.6s;
+}
+.progressBar--4 {
+  animation-delay: 0.8s;
+}
+.progressBar--5 {
+  animation-delay: 1s;
+}
+.progressBar--6 {
+  animation-delay: 1.2s;
+}
+.progressBar--7 {
+  animation-delay: 1.4s;
+}
+.progressBar--8 {
+  animation-delay: 1.6s;
+}
+.progressBar--9 {
+  animation-delay: 1.8s;
+}
+.progressBar-5 {
+  --max-width: 5%;
+}
+.progressBar-80 {
+  --max-width: 80%;
+}
+.progressBar-60 {
+  --max-width: 60%;
+}
+.progressBar-40 {
+  --max-width: 40%;
+}
+.progressBar-50 {
+  --max-width: 50%;
+}
+.progressBar-70 {
+  --max-width: 70%;
+}
+
+.color-DC4A25 {
+  background-color: #DC4A25;
+}
+.color-244BDD {
+  background-color: #244BDD;
+}
+.color-F86E60 {
+  background-color: #F86E60;
+}
+.color-815ABD {
+  background-color: #815ABD;
+}
+.color-EFD80B {
+  background-color: #EFD80B;
+}
+.color-5FD3F3 {
+  background-color: #5FD3F3;
+}
+.color-C76494 {
+  background-color: #C76494;
+}
+.color-C41F2D {
+  background-color: #C41F2D;
+}
+.color-7377AE {
+  background-color: #7377AE;
+}
+
+.progressBarNonAni {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+}
+.progressBarNonAni-5 {
+  width: 5%;
+}
+.progressBarNonAni-80 {
+  width: 80%;
+}
+.progressBarNonAni-60 {
+  width: 60%;
+}
+.progressBarNonAni-40 {
+  width: 40%;
+}
+.progressBarNonAni-50 {
+  width: 50%;
+}
+.progressBarNonAni-70 {
+  width: 70%;
+}/*# sourceMappingURL=competencesbarre.css.map */
