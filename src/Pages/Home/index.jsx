@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import { Sticky } from "../../Features/selector";
 import { Link } from "react-router-dom";
 import ScrollTop from "../../Features/scrollTop";
+import { motion } from "framer-motion";
+import { routeVariants } from "../../Features/routeVariants";
 
 
 const Home = () => {
@@ -14,7 +16,7 @@ const Home = () => {
     const isSticky = useSelector(Sticky)
 
     return (
-        <div>
+        <motion.div variants={routeVariants} initial="initial" animate="final" exit="exit" key="Home">
             {isSticky? <div className="home decal">
             <HelmetProvider>
                 <title>Portfolio de Bastien BARYLA</title>
@@ -49,7 +51,7 @@ const Home = () => {
  
         </div> }
         
-        </div>
+        </motion.div>
     )
 }
 

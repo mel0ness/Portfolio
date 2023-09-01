@@ -4,12 +4,14 @@ import ModaleProjet from "../../Components/ModaleProjet";
 import Datas from "../../assets/Datas.json"
 import { useSelector } from "react-redux";
 import { Sticky } from "../../Features/selector";
+import { motion } from "framer-motion";
+import { routeVariants } from "../../Features/routeVariants";
 
 const Projets = () => {
 
     const isSticky = useSelector(Sticky)
     
-    return (<div>
+    return (<motion.div variants={routeVariants} initial="initial" animate="final" exit="exit" key="Projets">
         <HelmetProvider>
                 <title>Mes projets</title>
             </HelmetProvider>
@@ -24,7 +26,7 @@ const Projets = () => {
 </div> }
           
 
-    </div>)
+    </motion.div>)
 }
 
 export default Projets;

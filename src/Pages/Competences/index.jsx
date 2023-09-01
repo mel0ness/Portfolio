@@ -4,18 +4,21 @@ import { Sticky } from "../../Features/selector";
 import CompetencesList from "../../Components/CompetencesList";
 import { HashLink as Link } from "react-router-hash-link";
 import Arrow from "../../assets/ArrowUp.svg"
+import { motion } from "framer-motion";
+import { routeVariants } from "../../Features/routeVariants";
 
 const Competences = () => {
     const isSticky = useSelector(Sticky)
+    
     return(
 
-        <div>
+        <motion.div layout variants={routeVariants} initial="initial" animate="final" exit="exit">
             <HelmetProvider>
                 <title>Mes compétences</title>
             </HelmetProvider>
             {isSticky? <div className="decal" id="up"><CompetencesList /><Link smooth to="/competences#up"><img src={Arrow} alt="retour en haut" className="ArrowUp" /></Link></div> : <div><CompetencesList /></div>}
           
-        </div>
+        </motion.div>
 
     )
 }

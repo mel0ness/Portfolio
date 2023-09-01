@@ -24,13 +24,13 @@ const Nav = () => {
         <Link onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
         <Link onClick={() => ClickNav()} to="/competences" className="onglet onglet--3">Compétences</Link>
         <Link onClick={() => ClickNav()} to="/histoire" className="onglet onglet--4">Mon histoire</Link>
-        <div onClick={() => ClickNav()} className="onglet onglet--5">Contact</div>
+        <Link onClick={() => ClickNav()} to="/contact" className="onglet onglet--5">Contact</Link>
     </nav> : <nav className="invisible">
     <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
         <Link  onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
         <Link onClick={() => ClickNav()} to="/competences" className="onglet onglet--3">Compétences</Link>
         <Link onClick={() => ClickNav()} to="/histoire" className="onglet onglet--4">Mon histoire</Link>
-        <div onClick={() => ClickNav()} className="onglet onglet--5">Contact</div>
+        <Link onClick={() => ClickNav()} to="/contact" className="onglet onglet--5">Contact</Link>
     </nav> }</div>
     )
 }

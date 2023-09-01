@@ -40,7 +40,7 @@ text-decoration: none;
 
     @for $i from 1 to 10 {
         &--#{$i} {
-            animation-duration: 0.4s * $i ;
+            animation-duration: 0.25s * $i ;
         }
     }
 }
@@ -60,12 +60,12 @@ text-decoration: none;
     height: 100%;
     left: 0;
     width: 0;
-    animation: Evolution 1.5s both;
+    animation: Evolution 0.8s both;
     opacity: 0.7;
 
     @for $j from 0 to 10 {
         &--#{$j} {
-            animation-delay: 0.3s * $j ;
+            animation-delay: 0.2s * $j ;
         }
     }
 

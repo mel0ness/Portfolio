@@ -1,34 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import "./Style/Utils/global.scss"
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Home from './Pages/Home';
-import Projets from './Pages/Projets';
-import Competences from './Pages/Competences';
-import Histoire from './Pages/Histoire';
+import RoutesWithAnimation from './Components/RoutesWithAnimation';
 import ReactHelmet from './Components/Helmet';
 import { Provider } from "react-redux";
 import store from './Features/store';
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
+import LocationProvider from './Components/LocationProvider';
+
 
 
 function App() {
+
   let persistore = persistStore(store);
   return (
     <Provider store={store}>
     <PersistGate persistor={persistore}>
+  
     <Router>
       <ReactHelmet />
 <Header />
-      <Routes>
-<Route exact path='/' element={<Home />} />
-<Route path='/projets' element={<Projets />} />
-<Route path='/histoire' element={<Histoire />} />
-<Route path='/competences' element={<Competences />} />
-      </Routes>
+<LocationProvider>
+        <RoutesWithAnimation />
+        </LocationProvider>
       <Footer />
-    </Router></PersistGate></Provider>
+    </Router>
+    </PersistGate></Provider>
   )
 }
 
