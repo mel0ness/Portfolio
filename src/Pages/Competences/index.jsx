@@ -11,16 +11,16 @@ const Competences = () => {
     const isSticky = useSelector(Sticky)
     
     return(
-
-        <motion.div variants={routeVariants} layout transition={{
-            layout: { duration: 0 }
-          }} initial="initial" animate="final">
+<div>
+        
             <HelmetProvider>
                 <title>Mes compétences</title>
             </HelmetProvider>
-            {isSticky? <div className="decal2" id="up"><CompetencesList /><Link smooth to="/competences#up"><img src={Arrow} alt="retour en haut" className="ArrowUp" /></Link></div> : <div><CompetencesList /></div>}
+            {isSticky? <div><motion.div layout><div className="decal2" id="up"><CompetencesList /></div></motion.div><Link smooth to="/competences#up"><img src={Arrow} alt="retour en haut" className="ArrowUp" /></Link></div> : <div><motion.div variants={routeVariants} layout transition={{
+            layout: { duration: 0 }
+          }} initial="initial" animate="final"><div><CompetencesList /></div></motion.div></div>}
           
-        </motion.div>
+      </div>
 
     )
 }

@@ -1,7 +1,7 @@
 export const sticky = (f) => {
 
     window.addEventListener("scroll", () => {
-        if(scrollY > 140.3) {
+        if(scrollY > 140) {
             f(true)
         }
         else {
