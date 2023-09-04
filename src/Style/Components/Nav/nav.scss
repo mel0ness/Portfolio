@@ -9,6 +9,7 @@
     & .onglet {
         opacity: 0;
         position: absolute;
+        border: 2px solid transparent;
 
     }
 
@@ -35,6 +36,7 @@
         padding-left: 10px;
         padding-right: 10px;
         margin: 1px;
+       
 
         &:hover {
             background-color: white;
@@ -52,8 +54,6 @@
                 color: white;
             border: 2px solid white;
             border-radius: 10px;
-            padding-left: 9px;
-padding-right: 8px;
         }
         
         }
@@ -87,6 +87,7 @@ padding-right: 8px;
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        border: 2px solid transparent;
 
         @for $i from 1 to 6 {
             &--#{$i} {
@@ -111,9 +112,7 @@ padding-right: 8px;
             background-color: variables.$color1;
             color: white;
         border: 2px solid white;
-        border-radius: 10px;
-    padding-left: 8px;
-padding-right: 8px;}
+        border-radius: 10px;}
     
     }
 }
