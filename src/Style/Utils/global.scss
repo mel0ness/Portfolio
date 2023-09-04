@@ -10,11 +10,7 @@ html {
     max-width: 1600px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-
-    @media(min-width: 1600px) {
-      width: 1600px;
-      margin: auto;
-    }
+    scrollbar-gutter: stable;
   }
   
   body, #root {

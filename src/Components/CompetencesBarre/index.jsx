@@ -5,7 +5,7 @@ const CompetencesBarre = (Props) => {
 
     return(
         <div>
-            <Link smooth to={`/competences#${Props.name}`}>
+            <Link className="linkComp" smooth to={`/competences#${Props.name}`}>
             <div className="Bar">
                 <div className="nameBar">{Props.name}</div>
                 <div className={"pourcentBar pourcentBar--"+Props.duration}>{Props.pourcent}%</div>

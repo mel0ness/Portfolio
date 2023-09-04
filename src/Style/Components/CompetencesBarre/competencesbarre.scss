@@ -18,6 +18,10 @@ text-decoration: none;
     opacity: 0.4;
     }
 }
+
+@media(min-width: 500px) {
+    width: 405px;
+}
 }
 
 .nameBar {
@@ -146,4 +150,14 @@ text-decoration: none;
         width: 70%;
     }
 
+}
+
+.linkComp {
+    display: block;
+    margin: auto;
+    width: 80%;
+
+    @media(min-width: 500px) {
+        width: 405px;
+    }
 }
