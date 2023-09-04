@@ -5,6 +5,9 @@ import { useSelector, useDispatch } from "react-redux";
 import "../../Style/Components/ModaleProjet/modaleprojet.scss"
 import { Erase } from "../../Features/modaleIDReducer";
 import { Link } from "react-router-dom";
+import { variantsModale } from "../../Features/variantsModale";
+import { motion } from "framer-motion";
+
 
 const ModaleProjet = () => {
 const dispatch = useDispatch();
@@ -26,19 +29,18 @@ let FilteredDatas = "";
     }
 
     return (<div>
-{ModaleOpenned? <div className="modaleOpenned">
+{ModaleOpenned? <div><div  onClick={() => closeModale()} className="modaleActive"></div><div className="modaleOpenned">
 <div onClick={() => closeModale()} className="Toclose">
     <span className="cross cross1"></span>
     <span className="cross cross2"></span>
 </div>
 <div className="Name">{FilteredDatas[0].nom}</div>
 <div className="Photo"><img src={FilteredDatas[0].photo} alt={FilteredDatas[0].nom} /></div>
-<div className="flexyDescr">
+<motion.div variants={variantsModale} initial="initial" animate="final" className="flexyDescr">
 <div className="flexy descr"><h4>Déscription du projet : </h4>{FilteredDatas[0].description}</div>
-    <div className="flexy"><h4>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
-    <div className="flexy"><h4>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div>
-</div>
-<div className="flexycomp">
+    <div className="flexy flexyCode"><h4>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
+    <div className="flexy flexyCode"><h4>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div> 
+    <div className="flexycomp">
     <h4>Compétences utilisées</h4>
 <div className="comp">
     <div className="compFlex"><h5>HTML</h5><Stars note={FilteredDatas[0].Compétences.HTML} /></div>
@@ -49,7 +51,9 @@ let FilteredDatas = "";
   
 </div>
 </div>
-</div> : <div className="modaleClosed"></div>}
+</motion.div>
+
+</div></div> : <div><div className="modaleInactive"></div><div className="modaleClosed"></div></div>}
 
     </div>)
 }

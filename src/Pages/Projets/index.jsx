@@ -20,11 +20,13 @@ const Projets = () => {
 
 {isSticky?  <div className="decal2"> <h1>Mes projets</h1>
             <div className="separator"></div>
+            <div className="toBecomeFlex">
             {Datas.map(({id, nom, photo, adresse, GithubCode, description, compétences}) => 
-            <CardProjet id={id} nom={nom} photo={photo} adresse={adresse} git={GithubCode} descr={description} compt={compétences} key={id} />)}<ModaleProjet /></div> :  <div> <h1>Mes projets</h1>
+            <CardProjet id={id} nom={nom} photo={photo} adresse={adresse} git={GithubCode} descr={description} compt={compétences} key={id} />)}</div><ModaleProjet /></div> :  <div> <h1>Mes projets</h1>
             <div className="separator"></div>
+            <div className="toBecomeFlex">
             {Datas.map(({id, nom, photo, adresse, GithubCode, description, compétences}) => 
-            <CardProjet id={id} nom={nom} photo={photo} adresse={adresse} git={GithubCode} descr={description} compt={compétences} key={id} />)}<ModaleProjet />
+            <CardProjet id={id} nom={nom} photo={photo} adresse={adresse} git={GithubCode} descr={description} compt={compétences} key={id} />)}</div><ModaleProjet />
 </div> }
           
 

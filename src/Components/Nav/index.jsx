@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "../../Style/Components/Nav/nav.scss"
 import ScrollTop from "../../Features/scrollTop";
+import LinkNav from "../LinkNav";
 
 const Nav = () => {
 
@@ -20,17 +20,17 @@ const Nav = () => {
         <span className="bottom"></span></div>  }
          
   {BurgerOpenned? <nav className="visible">
-        <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
-        <Link onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
-        <Link onClick={() => ClickNav()} to="/competences" className="onglet onglet--3">Compétences</Link>
-        <Link onClick={() => ClickNav()} to="/histoire" className="onglet onglet--4">Mon histoire</Link>
-        <Link onClick={() => ClickNav()} to="/contact" className="onglet onglet--5">Contact</Link>
+    <LinkNav funct={ClickNav} to="/" class="onglet--1" name="Home" />
+    <LinkNav funct={ClickNav} to="/projets" class="onglet--2" name="Projets" />
+    <LinkNav funct={ClickNav} to="/competences" class="onglet--3" name="Compétences" />
+    <LinkNav funct={ClickNav} to="/histoire" class="onglet--4" name="Mon histoire" />
+    <LinkNav funct={ClickNav} to="/contact" class="onglet--5" name="Contact" />
     </nav> : <nav className="invisible">
-    <Link onClick={() => ClickNav()} to="/" className="onglet onglet--1">Home</Link>
-        <Link  onClick={() => ClickNav()} to="/projets" className="onglet onglet--2">Projets</Link>
-        <Link onClick={() => ClickNav()} to="/competences" className="onglet onglet--3">Compétences</Link>
-        <Link onClick={() => ClickNav()} to="/histoire" className="onglet onglet--4">Mon histoire</Link>
-        <Link onClick={() => ClickNav()} to="/contact" className="onglet onglet--5">Contact</Link>
+    <LinkNav funct={ClickNav} to="/" class="onglet--1" name="Home" />
+    <LinkNav funct={ClickNav} to="/projets" class="onglet--2" name="Projets" />
+    <LinkNav funct={ClickNav} to="/competences" class="onglet--3" name="Compétences" />
+    <LinkNav funct={ClickNav} to="/histoire" class="onglet--4" name="Mon histoire" />
+    <LinkNav funct={ClickNav} to="/contact" class="onglet--5" name="Contact" />
     </nav> }</div>
     )
 }

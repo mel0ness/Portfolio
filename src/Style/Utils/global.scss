@@ -18,6 +18,10 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media(min-height: 1250px) {
+      justify-content: flex-start;
+    }
   }
 
   h1, h2 {
@@ -56,6 +60,10 @@ h5 {
 
 .decal {
   margin-top: 183px;
+
+  @media(min-width: 769px) {
+    margin-top: 179px ;
+  }
 }
 
 .decal2 {

@@ -5,13 +5,18 @@
     height: 100px;
     margin: auto;
     border-radius: 10px;
+
+    @media(min-width: 1000px) {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .projetGlobal {
     display: flex;
     flex-direction: column;
     max-width: 60%;
-    border: solid 2px variables.$color1;
+    border: solid 2px variables.$color1; 
     border-radius: 20px;
     overflow: hidden;
     margin: auto;
@@ -21,16 +26,29 @@
     padding-top: 10px;
     padding-bottom: 10px;
     gap: 10px;
+
+    @media(min-width: 1000px) {
+        width: 400px;
+        height: 300px;
+    }
 }
 
 .TitlePres {
     font-size: 1.2rem;
     font-weight: 600;
     font-style: italic;
+
+    @media(min-width: 1000px) {
+       font-size: 1.4rem;
+    }
 }
 
 .discoverProject {
     font-style: italic;
     text-decoration: underline;
     color: variables.$color1;
+
+    @media(min-width: 1000px) {
+        font-size: 1.3rem;
+    }
 }

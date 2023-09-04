@@ -17,6 +17,10 @@
     margin: auto;
     font-size: 16px;
     margin-bottom: 20px;
+
+    @media(min-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .lienHome {
@@ -30,6 +34,10 @@
 max-width: 80%;
 border: solid 2px variables.$color1;
 border-radius: 20px;
+
+@media(min-width: 426px) {
+    max-width: 350px;
+}
 }
 
 .bold {
