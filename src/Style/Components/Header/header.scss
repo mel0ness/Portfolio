@@ -20,9 +20,11 @@
     transition: transform 1s;
 
     @media(min-width: 769px) {
-    transform: unset;
-    left: 0;
+    transform: translateX(-50%);
+    transition: unset;
+    left: 50%;
     background-color: variables.$color1;
     width: 100%;
+    max-width: 1600px;
     }
 }
