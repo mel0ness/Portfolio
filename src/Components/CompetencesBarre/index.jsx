@@ -8,7 +8,6 @@ const CompetencesBarre = (Props) => {
             <Link className="linkComp" smooth to={`/competences#${Props.name}`}>
             <div className="Bar">
                 <div className="nameBar">{Props.name}</div>
-                <div className={"pourcentBar pourcentBar--"+Props.duration}>{Props.pourcent}%</div>
 <div className={"progressBar progressBar-"+Props.pourcent+ " color-"+Props.color +" progressBar--"+Props.delay}></div>
             </div></Link>
         </div>

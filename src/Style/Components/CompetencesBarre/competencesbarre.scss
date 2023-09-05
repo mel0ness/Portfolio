@@ -33,30 +33,7 @@ text-decoration: none;
     font-weight: 700;
 }
 
-.pourcentBar {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    font-size: 1.2rem;
-    animation: Pourcent both;
 
-    @for $i from 1 to 10 {
-        &--#{$i} {
-            animation-duration: 0.25s * $i ;
-        }
-    }
-}
-
-.pourcentBarNonAni {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    font-size: 1.2rem;
-}
 
 
 .progressBar {
