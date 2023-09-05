@@ -6,9 +6,9 @@ const CompetencesList = () => {
     return (<div>
         <h1>Compétences</h1>
     <div className="separator"></div>
-<CompetencesBarre name="HTML" pourcent="80" color="DC4A25" duration={1} delay={0} />
-<CompetencesBarre name="CSS" pourcent="70" color="244BDD" duration={2} delay={1}/>
-<CompetencesBarre name="Figma" pourcent="70" color="F86E60" duration={3} delay={2} />
+<CompetencesBarre name="HTML" pourcent="90" color="DC4A25" duration={1} delay={0} />
+<CompetencesBarre name="CSS" pourcent="80" color="244BDD" duration={2} delay={1}/>
+<CompetencesBarre name="Figma" pourcent="80" color="F86E60" duration={3} delay={2} />
 <CompetencesBarre name="REDUX" pourcent="70" color="815ABD" duration={4} delay={3}/>
 <CompetencesBarre name="JS" pourcent="60" color="EFD80B" duration={5} delay={4}/>
 <CompetencesBarre name="REACT" pourcent="60" color="5FD3F3" duration={6} delay={5}/>
@@ -16,13 +16,13 @@ const CompetencesList = () => {
 <CompetencesBarre name="Jest" pourcent="40" color="C41F2D" duration={8} delay={7}/>
 <CompetencesBarre name="PHP" pourcent="5" color="7377AE" duration={9} delay={8}/>
 <div className="separatorBIG" id="HTML"></div>
-<CompetenceSection name="HTML" pourcent="80" color="DC4A25" />
+<CompetenceSection name="HTML" pourcent="90" color="DC4A25" />
 <div className="competencesDescr">Compétences de base pour développer sur le net. Ma première approche a été en autodidacte et il s&apos;agit de la notion la plus rapide et facile à apprendre. (<span className="quote">Squelette d&apos;un site web</span>)</div>
 <div className="separatorBIG" id="CSS"></div>
-<CompetenceSection name="CSS" pourcent="70" color="244BDD" />
+<CompetenceSection name="CSS" pourcent="80" color="244BDD" />
 <div className="competencesDescr">Deuxième notion aprise en autodidacte mais il me manquait quelques notions importantes pour bien la maîtriser (<span className="quote">La puissance des différents display</span> par exemple). Ma formation m&apos;a permis de compléter ces notions et de savoir les maîtriser sans grande difficulté. </div>
 <div className="separatorBIG" id="Figma"></div>
-<CompetenceSection name="Figma" pourcent="70" color="F86E60" />
+<CompetenceSection name="Figma" pourcent="80" color="F86E60" />
 <div className="competencesDescr">Complétement découvert pendant ma formation, cet outil est un plaisir pour travailler avec des personnes ayant des idées précises de leur <span className="quote">design</span>. Il permet aussi de partager des idées et de travailler efficacement en équipe sur des maquettes.</div>
 <div className="separatorBIG" id="REDUX"></div>
 <CompetenceSection name="REDUX" pourcent="70" color="815ABD"/>
