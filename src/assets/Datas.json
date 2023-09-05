@@ -67,7 +67,7 @@
         "photo": "/assets/LHotel.jpg",
         "adresse": "https://www.lhotel-thouars.fr/",
         "GithubCode": "https://github.com/mel0ness/Lhotel-React",
-        "description" : "Création d'un site pour un Hôtel dans les Deux-Sèvres permettant une courte présentation mais aussi les réservations par formulaire. Ancienne Version encore en ligne, mais une version améliorée et REACT du site arrive et est déjà développée sur mon github. [Projet Personnel]",
+        "description" : "Création d'un site pour un Hôtel dans les Deux-Sèvres permettant une courte présentation mais aussi les réservations par formulaire. La nouvelle version est pour le moment un redirect vers une application netlify (Le gérant ne possédant qu'un compte OVH sans gestion de NodeJS). [Projet Personnel]",
         "Compétences": {
             "HTML" : 3,
             "CSS": 4,
