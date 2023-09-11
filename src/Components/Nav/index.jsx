@@ -15,7 +15,7 @@ const Nav = () => {
     return (<div>
         {BurgerOpenned?  <div className="burger" onClick={() => openBurger(false)}><span className="top topOpenned"></span>
         <span className="middle middleOpenned"></span>
-        <span className="bottom bottomOpenned"></span>  </div> :    <div className="burger" onClick={() => openBurger(true)}><span className="top"></span>
+        <span className="bottom bottomOpenned"></span>  </div> :    <div className="burger  background" onClick={() => openBurger(true)}><span className="top"></span>
         <span className="middle"></span>
         <span className="bottom"></span></div>  }
          
