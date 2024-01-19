@@ -1,7 +1,21 @@
 [
-    
     {
         "id": 1,
+        "nom": "Projets JS",
+        "photo": "/assets/PJS.png",
+        "adresse": "https://projetsjs-bastien.netlify.app/",
+        "GithubCode": "https://github.com/mel0ness/projetsJS",
+        "description" : "Site pour mettre en ligne l'ensemble des projets JS sur lesquels je travaille (Basiques ou plus complexes). Vous pouvez y trouver les liens pour trouver le code JS vanilla, ou consulter les réalisations fonctionnelles (Vanilla ou intégrées en React).",
+        "Compétences": {
+            "HTML" : 3,
+            "CSS": 3,
+            "JS": 5,
+            "REACT": 5,
+            "REDUX": 0
+        }
+    },
+    {
+        "id": 2,
         "nom": "JS Portfolio",
         "photo": "/assets/P6.jpg",
         "adresse": "https://mel0ness.github.io/Project-6/FrontEnd/index.html",
@@ -17,7 +31,7 @@
     },
 
     {
-        "id": 2,
+        "id": 3,
         "nom": "Application REACT de location d'immobilier",
         "photo": "/assets/P8.jpg",
         "adresse": "https://mel0ness.github.io/Projetc-8/",
@@ -32,7 +46,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 4,
         "nom": "Gestion du SEO et optimisation",
         "photo": "/assets/P9.jpg",
         "adresse": "https://mel0ness.github.io/Project-9/",
@@ -47,7 +61,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 5,
         "nom": "Application REACT avec REDUX",
         "photo": "/assets/P11.jpg",
         "adresse": "https://mel0ness.github.io/Project-11-deploy/",
@@ -62,7 +76,7 @@
         }
     },
     {
-        "id": 5,
+        "id": 6,
         "nom": "LHotel",
         "photo": "/assets/LHotel.jpg",
         "adresse": "https://www.lhotel-thouars.fr/",
