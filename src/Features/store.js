@@ -3,6 +3,7 @@ import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import StickyReducer from "./StickyReducer"
 import modaleIDReducer from "./modaleIDReducer"
+import themeReducer from "./themeReducer"
 
 
 
@@ -18,7 +19,8 @@ const persistConfig = {
 
   const reducers = combineReducers({
     Sticky: StickyReducer,
-    modaleID: modaleIDReducer
+    modaleID: modaleIDReducer,
+    theme: themeReducer
   })
  
 

@@ -3,15 +3,17 @@ import CardProjet from "../../Components/CardProjet";
 import ModaleProjet from "../../Components/ModaleProjet";
 import Datas from "../../assets/Datas.json"
 import { useSelector } from "react-redux";
-import { Sticky } from "../../Features/selector";
+import { Sticky, currentTheme } from "../../Features/selector";
 import { motion } from "framer-motion";
 import { routeVariants } from "../../Features/routeVariants";
+import "../../Style/Pages/Projets/projets.scss"
 
 const Projets = () => {
 
     const isSticky = useSelector(Sticky)
+    const colors = useSelector(currentTheme)
     
-    return (<div>
+    return (<div className={"projets " +colors}>
         <HelmetProvider>
                 <title>Mes projets</title>
             </HelmetProvider>

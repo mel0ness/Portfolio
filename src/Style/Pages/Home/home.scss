@@ -1,7 +1,17 @@
 @use "../../Utils/variables";
 .home {
-    background-color: #F5F5F5;
+
     padding-top: 20px;
+
+    &.Dark {
+        background-color: variables.$color1;
+        color: #F5F5F5;
+    }
+
+    &.Light {
+        background-color: #F5F5F5;
+        color: variables.$color1;
+    }
 
 }
 
@@ -24,7 +34,13 @@
 .lienHome {
     text-decoration: none;
     font-weight: 600;
+
+    &.Dark{
+    color: #F5F5F5;
+    }
+    &.Light{
     color: variables.$color1;
+    }
 }
 
 
@@ -32,6 +48,10 @@
 max-width: 80%;
 border: solid 2px variables.$color1;
 border-radius: 20px;
+
+&.Dark {
+    border-color: #F5F5F5;
+}
 
 @media(min-width: 426px) {
     max-width: 350px;

@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { routeVariants } from "../../Features/routeVariants";
 
 
-const Histoire = () => {
 
+const Histoire = () => {
 
     const isSticky = useSelector(Sticky)
     return(

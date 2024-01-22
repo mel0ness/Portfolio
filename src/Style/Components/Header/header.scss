@@ -2,11 +2,22 @@
 
 
 .header {
-    background-color: white;
+    
     position: relative;
+
+    &.Light {
+        background-color: white;
+    }
+    &.Dark {
+        background-color: variables.$color1;
+        color: white;
+        padding-bottom: 10px;
+        border-bottom: solid 3px white;
+    }
 }
 .logo {
     width: 160px;
+    border-radius: 40px;
 }
 
 .sticky {
@@ -18,6 +29,16 @@
     width: 160px;
     z-index: 12;
     transition: transform 1s;
+
+    &.Dark {
+        background-color: transparent;
+        padding-bottom: 0;
+        border-bottom: unset;
+    }
+
+    &.Light {
+        background-color: transparent;
+    }
 
     @media(min-width: 769px) {
     transform: translateX(-50%);

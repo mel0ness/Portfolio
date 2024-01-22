@@ -5,10 +5,12 @@ import { useState } from "react"
 import { useNavigate} from "react-router-dom"
 import { routeVariants } from "../../Features/routeVariants";
 import { motion } from "framer-motion"
+import { useSelector } from "react-redux"
+import { currentTheme } from "../../Features/selector";
 
 const Contact = () => {
 
-
+const colors = useSelector(currentTheme)
 
     const [sent, updateSent] = useState(false);
     const [sentFailed, updateSentFailed] = useState(false);
@@ -42,27 +44,27 @@ const Validation = () => {
       };
 
 return(
-    <motion.div variants={routeVariants} initial="initial" animate="final" exit="exit" key="Contact">
-        {sent? <div className="modaleCheckContact">
+    <motion.div variants={routeVariants} initial="initial" animate="final" exit="exit" key="Contact" className={"contact " +colors}>
+        {sent? <div className={"modaleCheckContact " +colors}>
             <div className="messageCheckContact">Votre message a bien été envoyé</div>
-            <div onClick={() => Validation()} className="buttonCheckContact">Merci</div>
+            <div onClick={() => Validation()} className={"buttonCheckContact " +colors}>Merci</div>
         </div> : <div>  
             </div>}
-            {sentFailed? <div className="modaleCheckContact">
+            {sentFailed? <div className={"modaleCheckContact " +colors}>
             <div className="messageCheckContact">Une erreur s&apos;est produite, veuillez réessayer plus tard.</div>
-            <div onClick={() => Validation()} className="buttonCheckContact">Compris</div>
+            <div onClick={() => Validation()} className={"buttonCheckContact " +colors}>Compris</div>
         </div> : <div>
             </div>}
-        <form className="formContact" ref={form} onSubmit={sendEmail}>
+        <form className={"formContact " +colors} ref={form} onSubmit={sendEmail}>
       <div className="ligneForm"><label>Nom :</label>
-      <input type="text" name="user_name" required/></div>
+      <input type="text" name="user_name" className={colors} required/></div>
       <div className="ligneForm"><label>Email :</label>
-      <input type="email" name="user_email" required/></div>
+      <input type="email" name="user_email" className={colors} required/></div>
       <div className="ligneForm"><label>Objet :</label>
-      <input type="text" name="user_object" required /></div>
+      <input type="text" name="user_object" className={colors} required /></div>
       <div className="ligneFormMsg"><label>Message :</label>
-      <textarea name="message" required minLength={15} /></div>
-      <input type="submit" value="Envoyer" />
+      <textarea name="message" className={colors} required minLength={15} /></div>
+      <input type="submit" value="Envoyer" className={colors} />
     </form>
 
     </motion.div>

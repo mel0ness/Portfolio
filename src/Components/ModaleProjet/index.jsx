@@ -1,4 +1,4 @@
-import { modaleID, modaleIDopened } from "../../Features/selector";
+import { currentTheme, modaleID, modaleIDopened } from "../../Features/selector";
 import Datas from "../../assets/Datas.json"
 import Stars from "../Stars";
 import { useSelector, useDispatch } from "react-redux";
@@ -13,6 +13,7 @@ const ModaleProjet = () => {
 const dispatch = useDispatch();
 const ModaleID = useSelector(modaleID)
 const ModaleOpenned = useSelector(modaleIDopened)
+const colors = useSelector(currentTheme)
 
 
 
@@ -34,14 +35,14 @@ let FilteredDatas = "";
     <span className="cross cross1"></span>
     <span className="cross cross2"></span>
 </div>
-<div className="Name">{FilteredDatas[0].nom}</div>
+<div className={"Name " +colors}>{FilteredDatas[0].nom}</div>
 <div className="Photo"><img src={FilteredDatas[0].photo} alt={FilteredDatas[0].nom} /></div>
 <motion.div variants={variantsModale} initial="initial" animate="final" className="flexyDescr">
-<div className="flexy descr"><h4>Déscription du projet : </h4>{FilteredDatas[0].description}</div>
-    <div className="flexy flexyCode"><h4>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
-    <div className="flexy flexyCode"><h4>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div> 
+<div className={"flexy descr " +colors}><h4 className={"h4 "+colors}>Déscription du projet : </h4>{FilteredDatas[0].description}</div>
+    <div className={"flexy flexyCode " +colors}><h4 className={colors}>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
+    <div className={"flexy flexyCode " +colors}><h4 className={colors}>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div> 
     <div className="flexycomp">
-    <h4>Compétences utilisées</h4>
+    <h4 className={"h4 "+colors}>Compétences utilisées</h4>
 <div className="comp">
     <div className="compFlex"><h5>HTML</h5><Stars note={FilteredDatas[0].Compétences.HTML} /></div>
     <div className="compFlex"><h5>CSS</h5><Stars note={FilteredDatas[0].Compétences.CSS} /></div>

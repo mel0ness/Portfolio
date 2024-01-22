@@ -20,6 +20,11 @@
     opacity: 1;
     transition: 0.5s;
 
+    &.Dark {
+        border-color: #f5f5f5;
+        background-color: variables.$color1;
+    }
+
     & .messageCheckContact {
         width: 80%;
         font-size: 1.2rem;
@@ -33,6 +38,12 @@
         width: 50%;
         font-size: 1.2rem;
         box-shadow: 2px 2px black;
+
+        &.Dark {
+            background-color: #f5f5f5;
+            color: variables.$color1;
+            box-shadow: 2px 2px black;
+        }
     }
 }
 
@@ -49,6 +60,10 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
+    &.Dark {
+        border-color: #f5f5f5;
+    }
+
     & input[type=submit] {
         width: 100px;
         margin: auto;
@@ -56,6 +71,11 @@
         color: white;
         border-radius: 10px;
         padding: 5px;
+
+        &.Dark {
+            background-color: #f5f5f5;
+            color: variables.$color1;
+        }
     }
 
     @media(min-width: 650px) {
@@ -79,6 +99,9 @@
         text-align: center;
         border: solid 2px variables.$color1;
         border-radius: 10px;
+        &.Dark {
+            border-color: #f5f5f5;
+        }
     }
 }
 
@@ -99,5 +122,20 @@
         height: 100px;
         border: solid 2px variables.$color1;
         border-radius: 10px;
+
+        &.Dark {
+            border-color: #f5f5f5;
+        }
+    }
+}
+
+.contact {
+    &.Dark {
+        background-color: variables.$color1;
+        color: #f5f5f5;
+    }
+    &.Light {
+        background-color: #f5f5f5;
+        color: variables.$color1;
     }
 }

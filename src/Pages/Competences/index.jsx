@@ -6,12 +6,15 @@ import { HashLink as Link } from "react-router-hash-link";
 import Arrow from "../../assets/ArrowUp.svg"
 import { motion } from "framer-motion";
 import { routeVariants } from "../../Features/routeVariants";
+import "../../Style/Pages/Competences/competences.scss";
+import { currentTheme } from "../../Features/selector";
 
 const Competences = () => {
     const isSticky = useSelector(Sticky)
+    const colors = useSelector(currentTheme)
     
     return(
-<div>
+<div className={"competences " +colors}>
         
             <HelmetProvider>
                 <title>Mes compétences</title>

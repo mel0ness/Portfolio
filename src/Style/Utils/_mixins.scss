@@ -8,4 +8,8 @@
     background-color: variables.$color1;
     position: absolute;
     transition: 600ms;
+
+    &.Dark {
+        background-color: white;
+    }
 }

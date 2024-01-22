@@ -2,8 +2,12 @@ import { useState } from "react";
 import "../../Style/Components/Nav/nav.scss"
 import ScrollTop from "../../Features/scrollTop";
 import LinkNav from "../LinkNav";
+import { currentTheme } from "../../Features/selector";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
+
+    const colors = useSelector(currentTheme)
 
     const ClickNav = () => {
        
@@ -11,11 +15,11 @@ const Nav = () => {
         openBurger(false);
     }
 
-    const [BurgerOpenned, openBurger] = useState(false);
+    const [BurgerOpenned, openBurger] = useState(false); 
     return (<div>
-        {BurgerOpenned?  <div className="burger" onClick={() => openBurger(false)}><span className="top topOpenned"></span>
-        <span className="middle middleOpenned"></span>
-        <span className="bottom bottomOpenned"></span>  </div> :    <div className="burger  background" onClick={() => openBurger(true)}><span className="top"></span>
+        {BurgerOpenned?  <div className="burger" onClick={() => openBurger(false)}><span className={"top topOpenned "+colors}></span>
+        <span className={"middle middleOpenned " +colors}></span>
+        <span className={"bottom bottomOpenned " +colors}></span>  </div> :    <div className="burger  background" onClick={() => openBurger(true)}><span className="top"></span>
         <span className="middle"></span>
         <span className="bottom"></span></div>  }
          

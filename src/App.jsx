@@ -11,8 +11,8 @@ import { persistStore } from "redux-persist";
 import LocationProvider from './Components/LocationProvider';
 
 
-
 function App() {
+
 
   let persistore = persistStore(store);
   return (

@@ -1,0 +1,9 @@
+@use "../../Utils/variables";
+
+.competences{
+    background-color: #f5f5f5;
+    &.Dark {
+background-color: variables.$color1;
+color: #f5f5f5;
+    }
+}

@@ -74,6 +74,10 @@ left: 50%;
     align-items: center;
     justify-content: center;
 
+    &.Dark {
+        color: variables.$color1;
+    }
+
     @media(min-width: 425px) {
         left: 0;
         margin: auto;
@@ -127,6 +131,10 @@ left: 50%;
     }
 
     & .flexyCode {
+
+        &.Dark {
+            color: variables.$color1;
+        }
         @media(min-width: 768px) {
             width: 60%;
             margin: auto;
@@ -136,13 +144,22 @@ left: 50%;
         text-decoration: none;
         color: variables.$color1;
         font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     & .descr {
         text-align: justify;
 
+        &.Dark {
+            color: black;
+            & h4 {
+                color: variables.$color1;
+            }
+        }
         & h4 {
             text-align: center;
+         
         }
     }
 
@@ -208,5 +225,11 @@ transform: translateX(-50%);
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+    }
+}
+
+.h4 {
+    &.Dark {
+        color: variables.$color1;
     }
 }
