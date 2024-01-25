@@ -16,7 +16,7 @@ const Nav = () => {
     }
 
     const [BurgerOpenned, openBurger] = useState(false); 
-    return (<div>
+    return (<div className="stick">
         {BurgerOpenned?  <div className="burger" onClick={() => openBurger(false)}><span className={"top topOpenned "+colors}></span>
         <span className={"middle middleOpenned " +colors}></span>
         <span className={"bottom bottomOpenned " +colors}></span>  </div> :    <div className="burger  background" onClick={() => openBurger(true)}><span className="top"></span>

@@ -41,7 +41,7 @@ let FilteredDatas = "";
 <div className={"flexy descr " +colors}><h4 className={"h4 "+colors}>Description du projet : </h4>{FilteredDatas[0].description}</div>
     <div className={"flexy flexyCode " +colors}><h4 className={colors}>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
     <div className={"flexy flexyCode " +colors}><h4 className={colors}>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div> 
-    <div className="flexycomp">
+    <div className="flexycomp"> 
     <h4 className={"h4 "+colors}>Compétences utilisées</h4>
 <div className="comp">
     <div className="compFlex"><h5>HTML</h5><Stars note={FilteredDatas[0].Compétences.HTML} /></div>

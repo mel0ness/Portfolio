@@ -31,14 +31,14 @@
     transition: transform 1s;
 
     &.Dark {
-        background-color: transparent;
         padding-bottom: 0;
-        border-bottom: unset;
+        background-color: transparent;
+    }
+    &.Light {
+        padding-bottom: 0;
+        background-color: transparent;
     }
 
-    &.Light {
-        background-color: transparent;
-    }
 
     @media(min-width: 769px) {
     transform: translateX(-50%);

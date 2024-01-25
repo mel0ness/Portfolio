@@ -26,7 +26,7 @@ useEffect(() => {
         dispatch(Active())
     }
     else {
-        dispatch(Disactive())
+        dispatch(Disactive()) 
     }
 }, [scroll, dispatch])
 

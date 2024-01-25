@@ -6,9 +6,6 @@ export const sticky = (f) => {
         if(scrollY > 140.375 && width < 769) {
             f(true)
         }
-        else if(scrollY > 128 && width >= 769) {
-            f(true)
-        }
         else {
             f(false)
         }
