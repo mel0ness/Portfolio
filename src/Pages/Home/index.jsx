@@ -43,7 +43,7 @@ const Home = () => {
             <h1>Présentation</h1>
             <div className={"separator " +colors}></div>
             <div className="presentation"><span className="bold">Passionné</span> par le monde du code et du net, j&apos;ai commencé en autodidacte avant de me lancer dans une formation pour apprendre diverses compétences telles que REACT, REDUX, ou approfondir mes connaissances en Javascript.</div>
-            <div className="presentation Link"><a href={CV} download target="_blank" rel="noreferrer" className={"bold CVLink "+colors}>Télécharger mon CV</a></div>
+            <div className="presentation Link"><a href={CV} download="CV-BB.pdf" target="_blank" rel="noreferrer" className={"bold CVLink "+colors}>Télécharger mon CV</a></div>
            
 <img src={Photo} alt="Photo de Bastien BARYLA" className={"mainPhoto " +colors}/>
 <h2>Ambitions</h2>
