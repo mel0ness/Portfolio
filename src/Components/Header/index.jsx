@@ -33,7 +33,7 @@ useEffect(() => {
 
     return (
         <div>
-            {isSticky?  <div className={"header sticky " +colors}><Nav/></div> :  <div className={"header " +colors}><Link to="/"><img src={Logo} alt="Logo de Bastien BARYLA" className="logo" /></Link><Theme /><Nav/></div>  }
+            {isSticky?  <div className={"header sticky flush " +colors}><Nav/></div> :  <div className={"header " +colors}><Link to="/"><img src={Logo} alt="Logo de Bastien BARYLA" className="logo" /></Link><Theme /><Nav/></div>  }
              
         </div>
     )
