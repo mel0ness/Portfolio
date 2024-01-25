@@ -14,10 +14,14 @@
     border-radius: 20px;
     z-index: 14;
 
+    &::-webkit-scrollbar-track {
+        background: orange;
+    }
+
     @media (orientation: landscape) {
         max-height: 80vh;
         overflow-y: scroll;
-        scrollbar-width: none;
+      
     }
 
     @media(min-width: 768px) {
