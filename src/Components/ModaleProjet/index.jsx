@@ -38,7 +38,7 @@ let FilteredDatas = "";
 <div className={"Name " +colors}>{FilteredDatas[0].nom}</div>
 <div className="Photo"><img src={FilteredDatas[0].photo} alt={FilteredDatas[0].nom} /></div>
 <motion.div variants={variantsModale} initial="initial" animate="final" className="flexyDescr">
-<div className={"flexy descr " +colors}><h4 className={"h4 "+colors}>Déscription du projet : </h4>{FilteredDatas[0].description}</div>
+<div className={"flexy descr " +colors}><h4 className={"h4 "+colors}>Description du projet : </h4>{FilteredDatas[0].description}</div>
     <div className={"flexy flexyCode " +colors}><h4 className={colors}>Lien vers le code : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].GithubCode}>{FilteredDatas[0].GithubCode}</Link></div>
     <div className={"flexy flexyCode " +colors}><h4 className={colors}>Lien vers le site : </h4><Link onClick={() => eraseDatas()} to={FilteredDatas[0].adresse}>{FilteredDatas[0].adresse}</Link></div> 
     <div className="flexycomp">

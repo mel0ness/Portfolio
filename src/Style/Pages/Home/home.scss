@@ -16,7 +16,13 @@
 }
 
 
+.CVLink {
+    color: variables.$color1;
 
+    &.Dark {
+        color: #f5f5f5;
+    }
+}
 
 
 .presentation {

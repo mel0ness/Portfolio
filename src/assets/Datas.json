@@ -5,7 +5,7 @@
         "photo": "/assets/PJS.png",
         "adresse": "https://projetsjs-bastien.netlify.app/",
         "GithubCode": "https://github.com/mel0ness/projetsJS",
-        "description" : "Site pour mettre en ligne l'ensemble des projets JS sur lesquels je travaille (Basiques ou plus complexes). Vous pouvez y trouver les liens pour trouver le code JS vanilla, ou consulter les réalisations fonctionnelles (Vanilla ou intégrées en React).",
+        "description" : "Site pour mettre en ligne l'ensemble des projets JS sur lesquels je travaille (basiques ou plus complexes). Vous pouvez y trouver les liens pour trouver le code JS vanilla, ou consulter les réalisations fonctionnelles (Vanilla ou intégrées en React). [Projet personnel]",
         "Compétences": {
             "HTML" : 3,
             "CSS": 3,
@@ -51,7 +51,7 @@
         "photo": "/assets/P9.jpg",
         "adresse": "https://mel0ness.github.io/Project-9/",
         "GithubCode": "https://github.com/mel0ness/Project-9",
-        "description" : "Modification du code d'un site en vue d'y apporter une meilleure organisation. Augmenter l'accéssibilité du site ainsi que son optimisation. (Utilisation des meta datas pour les réseaux sociaux, optimisation des images et des données chargées...) [Projet OpenClassRooms]",
+        "description" : "Modification du code d'un site en vue d'y apporter une meilleure organisation. Augmenter l'accessibilité du site ainsi que son optimisation. (Utilisation des meta datas pour les réseaux sociaux, optimisation des images et des données chargées...) [Projet OpenClassRooms]",
         "Compétences": {
             "HTML" : 5,
             "CSS": 4,
