@@ -3,8 +3,6 @@
 .modaleOpenned {
     width: 90%;
     height: 90%;
-    max-height: 90vh;
-    overflow: scroll;
     background-color: white;
     position: fixed;
     top:50%;
@@ -15,6 +13,11 @@
     border: 5px solid variables.$color1;
     border-radius: 20px;
     z-index: 14;
+
+    @media (orientation: landscape) {
+        max-height: 70vh;
+        overflow: scroll;
+    }
 
     @media(min-width: 768px) {
         width: 700px;
