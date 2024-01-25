@@ -4,3 +4,12 @@
     width: 200px;
     height: 200px;
 }
+
+.error {
+    &.Dark {
+        color: #f5f5f5;
+    }
+    &.Light {
+        background-color: #f5f5f5;
+    }
+}
